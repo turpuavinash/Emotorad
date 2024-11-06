@@ -1,0 +1,12 @@
+.sidebar .menu li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .sidebar .icon {
+    margin-right: 10px;
+    font-size: 20px; /* Adjust the size as needed */
+  }
+  

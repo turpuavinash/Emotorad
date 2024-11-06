@@ -1,0 +1,106 @@
+/* Login.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Use a clean font */
+    background-color: #e0e0e0; /* Light gray background */
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center;    /* Center horizontally */
+    height: 100vh;         /* Full height of the viewport */
+    background-color: #f5f5f5; /* Light background color */
+}
+
+.login-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Center items horizontally */
+    margin-bottom: 20px;    /* Space below header */
+}
+
+.logo {
+    font-size: 2rem;        /* Adjust logo font size */
+    font-weight: bold;      /* Make logo text bold */
+    color: #007bff;         /* Primary color for logo */
+}
+
+.login-box {
+    background-color: white; /* White background for the login box */
+    padding: 20px;          /* Padding inside the box */
+    border-radius: 8px;     /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    width: 300px;           /* Set a fixed width for the box */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+}
+
+.login-form input {
+    margin-bottom: 15px;    /* Space between input fields */
+    padding: 10px;          /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;     /* Rounded corners for inputs */
+    font-size: 16px;        /* Font size for input text */
+}
+
+.login-form button {
+    padding: 10px;          /* Padding inside buttons */
+    border: none;           /* Remove border */
+    border-radius: 4px;    /* Rounded corners for buttons */
+    background-color: #007bff; /* Primary color for buttons */
+    color: white;           /* Text color for buttons */
+    font-size: 16px;        /* Font size for button text */
+    cursor: pointer;        /* Cursor changes to pointer */
+}
+
+.forgot-password {
+    margin-top: 10px;      /* Space above the "Forgot password?" link */
+    text-align: center;     /* Center text */
+}
+
+.social-login {
+    margin-top: 20px;       /* Space above social login */
+    text-align: center;      /* Center social login buttons */
+}
+
+/* Login Footer */
+.login-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 10px;
+}
+
+.social-media-icons a {
+    color: #000; /* Default color for icons */
+    font-size: 24px; /* Size of the icons */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-media-icons a:hover {
+    color: #007bff; /* Change color on hover (Bootstrap primary color) */
+}
+
+/* Hover effect for "Register Here" link */
+.register-link {
+    color: #007bff; /* Blue color for the link */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Make the link text bold */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scale */
+}
+
+.register-link:hover {
+    color: #357ab7; /* Change color on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}

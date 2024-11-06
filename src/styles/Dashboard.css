@@ -1,0 +1,214 @@
+/* Dashboard.css */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .nav-item {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow-y: auto; /* Allow vertical scrolling */
+  }
+  
+  .dashboard-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  /* Change color of icons in h4 */
+/* Change color of the icons for Total Cash, Total Transactions, and Total Likes */
+
+/* Total Cash icon */
+.cash-icon {
+    color: #28a745; /* Example color for the cash icon (green) */
+  }
+  
+  /* Total Transactions icon */
+  .transaction-icon {
+    color: #dc3545; /* Example color for the transaction icon (red) */
+  }
+  
+  /* Total Likes icon */
+  .likes-icon {
+    color: #ffc107; /* Example color for the like icon (yellow) */
+  }
+  
+  /* Total Users icon (already updated) */
+  .user-icon {
+    color: #007bff; /* Example color for the user icon (blue) */
+  }
+  
+  /* Metric Card Layout: Flexbox */
+.metric-card {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin: 15px;
+    padding: 15px;
+    background-color: #f8f9fa; /* Background color for the card */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Add right alignment to metric-change */
+  .metric-change {
+    display: inline-block; /* Make it inline block */
+    padding: 5px 10px; /* Padding around the text */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-weight: bold; /* Bold text */
+    margin-top: 5px; /* Space above the metric change section */
+    margin-left: auto; /* Push it to the right */
+  }
+  
+  /* Positive Change Color */
+  .metric-change.positive {
+    background-color: #dff0d8; /* Light green background for positive change */
+    color: #3c763d; /* Dark green text color */
+  }
+  
+  /* Negative Change Color */
+  .metric-change.negative {
+    background-color: #f2dede; /* Light red background for negative change */
+    color: #a94442; /* Dark red text color */
+  }
+  
+  
+  .metrics-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: nowrap; /* No wrapping for metric cards */
+  }
+  
+  .metric-card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Equal flex growth */
+    margin: 0 5px; /* Space between cards */
+    min-width: 180px; /* Minimum width to prevent shrinking */
+  }
+  
+  .metric-card h4 {
+    margin: 0;
+  }
+  
+  .metric-change {
+    font-weight: bold;
+  }
+  
+  .positive {
+    color: green;
+  }
+  
+  .negative {
+    color: red;
+  }
+  
+  .charts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Add margin for spacing */
+  }
+  
+  .activity-chart {
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Maximum width for larger screens */
+    height: 300px; /* Adjust height for charts */
+    margin-bottom: 20px; /* Space below activity chart */
+  }
+  
+  .activity-chart h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .pie-chart {
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Maximum width for larger screens */
+    height: 250px; /* Adjust height for pie chart */
+  }
+  
+  .pie-chart h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .add-profile-row {
+    display: flex; /* Use flex for alignment */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center vertically */
+    margin-top: 20px; /* Space above the row */
+  }
+  
+  .add-profile-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-profile-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .metrics-cards {
+      flex-direction: column; /* Stack cards vertically on small screens */
+      margin-bottom: 20px;
+    }
+  
+    .metric-card {
+      margin: 10px 0; /* Space between stacked cards */
+    }
+  
+    .activity-chart,
+    .pie-chart {
+      height: 200px; /* Smaller height for mobile */
+    }
+  
+    .add-profile-row {
+      flex-direction: column; /* Stack on smaller screens */
+      align-items: flex-start; /* Align items to the start */
+    }
+  }
+  /* Dashboard.css */
+.sidebar {
+    /* Your existing sidebar styles */
+  }
+  
+  .nav-item {
+    padding: 15px;
+    color: white; /* Set default text color to white */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .nav-item:hover {
+    background-color: rgba(75, 192, 192, 0.2); /* Light background on hover */
+    color: #007bff; /* Change text color on hover */
+  }
+  

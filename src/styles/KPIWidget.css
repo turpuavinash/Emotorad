@@ -1,0 +1,12 @@
+/* src/components/KPIWidget.css */
+.kpi-widget {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 23%; /* Adjust this based on how many you want in a row */
+  }
+  .change {
+    color: green;
+  }
+  
